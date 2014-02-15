@@ -15,6 +15,13 @@
      <% end %>
      <%= yield %>
      <%= render 'layouts/footer' %>
+      
+      <% #req = Rack::Request.new('development') %>
+      <% #req.post?() %>
+      <%# flash[:alert] = request.fullpath %>
+      <% #flash[:alert] %>
+      <% #request.params["data"] %>
+      
      <%= debug(params) if Rails.env.development? %>
    </div>
   </body>
